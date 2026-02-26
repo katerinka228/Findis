@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findis — акции фастфуда рядом</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="bg-black text-gray-200 font-sans">
+
+<header class="bg-[#0a0a0a] border-b border-[#2a2a2a] py-3 sticky top-0 z-10">
+    <div class="container mx-auto px-4 flex items-center justify-between flex-wrap gap-4">
+        <div class="text-3xl font-black text-orange-500 tracking-tight">Findis</div>
+
+        <div class="flex-grow max-w-md mx-4">
+            <input type="text" placeholder="Поиск ресторанов или акций..."
+                   class="w-full px-4 py-2 bg-[#1a1a1a] border border-[#333] rounded-full text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500">
+        </div>
+
+        <div class="flex items-center space-x-4">
+            <button class="relative">
+                <span class="favorite-icon">♡</span>
+                <span class="absolute -top-1 -right-2 favorite-badge rounded-full w-4 h-4 flex items-center justify-center">3</span>
+            </button>
+            <button class="text-gray-300 hover:text-orange-500 font-medium">Войти</button>
+            <button class="bg-orange-500 text-black px-5 py-2 rounded-full font-semibold hover:bg-orange-400 transition">Регистрация</button>
+        </div>
+    </div>
+</header>
+
+<main class="container mx-auto px-4 py-8">
+
+    <section class="mb-12">
+        <h2 class="text-2xl font-bold mb-4 text-white">Акции рядом</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="deal-card rounded-xl overflow-hidden">
+                <div class="relative">
+                    <div class="image-placeholder">Заглушка изображения</div>
+                    <button class="like-button absolute top-1 right-2">
+                        ♡
+                    </button>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-white">Чизбургер + картошка</h3>
+                    <p class="text-gray-400 text-sm">KFC</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-xl font-bold text-orange-500">199 ₽</span>
+                        <span class="text-sm text-gray-500">~350 м</span>
+                    </div>
+                </div>
+            </div>
+            <div class="deal-card rounded-xl overflow-hidden">
+                <div class="relative">
+                    <div class="image-placeholder">Заглушка изображения</div>
+                    <button class="like-button absolute top-1 right-2">
+                        ♡
+                    </button>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-white">Воппер + напиток</h3>
+                    <p class="text-gray-400 text-sm">Burger King</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-xl font-bold text-orange-500">299 ₽</span>
+                        <span class="text-sm text-gray-500">~800 м</span>
+                    </div>
+                </div>
+            </div>
+            <div class="deal-card rounded-xl overflow-hidden">
+                <div class="relative">
+                    <div class="image-placeholder">Заглушка изображения</div>
+                    <button class="like-button absolute top-1 right-2">
+                        ♡
+                    </button>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-white">Биг Мак меню</h3>
+                    <p class="text-gray-400 text-sm">McDonald's</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-xl font-bold text-orange-500">449 ₽</span>
+                        <span class="text-sm text-gray-500">~1.2 км</span>
+                    </div>
+                </div>
+            </div>
+            <div class="deal-card rounded-xl overflow-hidden">
+                <div class="relative">
+                    <div class="image-placeholder">Заглушка изображения</div>
+                    <button class="like-button absolute top-1 right-2">
+                        ♡
+                    </button>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-white">2 пиццы по цене 1</h3>
+                    <p class="text-gray-400 text-sm">Pizza Hut</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-xl font-bold text-orange-500">599 ₽</span>
+                        <span class="text-sm text-gray-500">~1.5 км</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-12">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-2xl font-bold text-white">KFC</h2>
+            <a href="#" class="text-orange-500 hover:underline">Все акции →</a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="deal-card rounded-xl overflow-hidden">
+                <div class="relative">
+                    <div class="image-placeholder">Заглушка изображения</div>
+                    <button class="like-button absolute top-1 right-2">
+                        ♡
+                    </button>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-white">Острый стрипс</h3>
+                    <p class="text-gray-400 text-sm">KFC</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-xl font-bold text-orange-500">179 ₽</span>
+                        <span class="text-sm text-gray-500">~350 м</span>
+                    </div>
+                </div>
+            </div>
+            <div class="deal-card rounded-xl overflow-hidden">
+                <div class="relative">
+                    <div class="image-placeholder">Заглушка изображения</div>
+                    <button class="like-button absolute top-1 right-2">
+                        ♡
+                    </button>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-white">Твистер бокс</h3>
+                    <p class="text-gray-400 text-sm">KFC</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-xl font-bold text-orange-500">279 ₽</span>
+                        <span class="text-sm text-gray-500">~350 м</span>
+                    </div>
+                </div>
+            </div>
+            <div class="deal-card rounded-xl overflow-hidden">
+                <div class="relative">
+                    <div class="image-placeholder">Заглушка изображения</div>
+                    <button class="like-button absolute top-1 right-2">
+                        ♡
+                    </button>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-white">Баскет с крыльями</h3>
+                    <p class="text-gray-400 text-sm">KFC</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-xl font-bold text-orange-500">399 ₽</span>
+                        <span class="text-sm text-gray-500">~350 м</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-12">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-2xl font-bold text-white">Burger King</h2>
+            <a href="#" class="text-orange-500 hover:underline">Все акции →</a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="deal-card rounded-xl overflow-hidden flex flex-col h-full">
+                <div class="relative">
+                    <img src="https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/dishes/2aabaf63edeb630990a775707eb861bc.png" alt="..." class="w-full h-70 object-cover">
+                    <button class="like-button absolute top-1 right-2">♡</button>
+                </div>
+                <div class="p-4 flex-1 flex flex-col justify-end">
+                    <h3 class="font-bold text-lg text-white">Комбо</h3>
+                    <p class="text-gray-400 text-sm">Burger King</p>
+                    <div class="flex justify-between items-center mt-1">
+                        <span class="text-xl font-bold text-orange-500">450 ₽</span>
+                        <span class="text-sm text-gray-500">~800 м</span>
+                    </div>
+                </div>
+            </div>
+            <div class="deal-card rounded-xl overflow-hidden flex flex-col h-full">
+                <div class="relative">
+                    <img src="https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/dishes/73fe6e3e042ea79246796e5e1a9c0162.png" alt="..." class="w-full h-30 object-cover">
+                    <button class="like-button absolute top-1 right-2">♡</button>
+                </div>
+                <div class="p-4 flex-1 flex flex-col justify-end">
+                    <h3 class="font-bold text-lg text-white">Ролл с картошкой со скидкой</h3>
+                    <p class="text-gray-400 text-sm">Burger King</p>
+                    <div class="flex justify-between items-center mt-1">
+                        <span class="text-xl font-bold text-orange-500">450 ₽</span>
+                        <span class="text-sm text-gray-500">~800 м</span>
+                    </div>
+                </div>
+            </div>
+            <div class="deal-card rounded-xl overflow-hidden flex flex-col h-full">
+                <div class="relative">
+                    <img src="https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/dishes/798e4605e857402d8ad93aede938ff67.png" alt="..." class="w-full h-30 object-cover">
+                    <button class="like-button absolute top-1 right-2">♡</button>
+                </div>
+                <div class="p-4 flex-1 flex flex-col justify-end">
+                    <h3 class="font-bold text-lg text-white">2 Воппера со скидкой</h3>
+                    <p class="text-gray-400 text-sm">Burger King</p>
+                    <div class="flex justify-between items-center mt-1">
+                        <span class="text-xl font-bold text-orange-500">450 ₽</span>
+                        <span class="text-sm text-gray-500">~800 м</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-12">
+        <h2 class="text-2xl font-bold mb-4 text-white">Карта заведений</h2>
+        <div class="bg-[#151515] rounded-xl h-96 border border-[#2a2a2a] overflow-hidden">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adee7a4155d37b7eddec6fed053ec5f4296cca9371fda8147cabc598c4d483d70&amp;source=constructor"
+                    height="391"
+                    class="w-full border-0">
+            </iframe>
+        </div>
+        <p class="text-sm text-gray-500 mt-2">Нажмите на точку, чтобы увидеть акции ресторана</p>
+    </section>
+</main>
+
+<footer class="bg-[#0a0a0a] border-t border-[#2a2a2a] py-8">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+            <h3 class="font-bold text-lg mb-2 text-white">Findis</h3>
+            <p class="text-gray-400 text-sm">Быстрый поиск акций фастфуда рядом с вами</p>
+        </div>
+        <div>
+            <h4 class="font-semibold mb-2 text-white">Контакты</h4>
+            <ul class="text-sm text-gray-400 space-y-1">
+                <li>Email: support@findis.ru</li>
+                <li>Соцсети:
+                    <a href="#" class="text-orange-500 hover:underline">VK</a>,
+                    <a href="#" class="text-orange-500 hover:underline">Telegram</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-semibold mb-2 text-white">Информация</h4>
+            <ul class="text-sm text-gray-400 space-y-1">
+                <li><a href="#" class="hover:text-orange-500">О проекте</a></li>
+                <li><a href="#" class="hover:text-orange-500">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 mt-8 pt-4 border-t border-[#2a2a2a] text-center text-sm text-gray-500">
+        © 2026 Findis.
+    </div>
+</footer>
+
+</body>
+</html>
