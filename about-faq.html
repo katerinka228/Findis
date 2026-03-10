@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте и FAQ — Findis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="bg-black text-gray-200 font-sans">
+
+<header class="bg-[#0a0a0a] border-b border-[#2a2a2a] py-3 sticky top-0 z-10">
+    <div class="container mx-auto px-4 flex items-center justify-between flex-wrap gap-4">
+        <div class="text-3xl font-black text-orange-500 tracking-tight">
+            <a href="index.html">
+                Findis
+            </a></div>
+        <div class="flex-grow max-w-md mx-4">
+            <input type="text" placeholder="Поиск ресторанов или акций..."
+                   class="w-full px-4 py-2 bg-[#1a1a1a] border border-[#333] rounded-full text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500">
+        </div>
+        <div class="flex items-center space-x-4">
+            <button class="relative">
+                <span class="favorite-icon">♡</span>
+                <span class="absolute -top-1 -right-2 favorite-badge rounded-full w-4 h-4 flex items-center justify-center">3</span>
+            </button>
+            <a href="login.html" class="text-gray-300 hover:text-orange-500 font-medium">Войти</a>
+            <a href="register.html" class="bg-orange-500 text-black px-5 py-2 rounded-full font-semibold hover:bg-orange-400 transition">Регистрация</a>
+        </div>
+    </div>
+</header>
+
+<main class="container mx-auto px-4 py-8">
+    <section id="about" class="mb-16 scroll-mt-20">
+        <h2 class="text-3xl font-bold text-white mb-6">О проекте</h2>
+        <div class="bg-[#151515] border border-[#2a2a2a] rounded-xl p-6">
+            <p class="text-gray-300 leading-relaxed">
+                Findis — это сервис, который помогает быстро находить акции и скидки в заведениях фастфуда рядом с вами.
+                Мы собираем информацию о ближайших ресторанах, их специальных предложениях и показываем её на карте.
+                Наша цель — экономить ваше время и деньги, чтобы вы всегда знали, где сегодня выгодно поесть.
+            </p>
+            <p class="text-gray-300 leading-relaxed mt-4">
+                Проект создан для любителей бургеров, картошки фри и вкусных комбо. Все акции обновляются ежедневно,
+                а интерактивная карта поможет проложить маршрут до нужного ресторана.
+            </p>
+        </div>
+    </section>
+
+    <section id="faq" class="mb-16 scroll-mt-20">
+        <h2 class="text-3xl font-bold text-white mb-6">Часто задаваемые вопросы</h2>
+        <div class="space-y-3">
+            <details class="bg-[#151515] border border-[#2a2a2a] rounded-lg open:ring-1 open:ring-orange-500">
+                <summary class="px-5 py-4 font-medium text-white cursor-pointer list-none flex justify-between items-center">
+                    <span>Как часто обновляются акции?</span>
+                    <span class="text-orange-500 text-xl transition-transform duration-200">▼</span>
+                </summary>
+                <div class="px-5 pb-5 text-gray-400">
+                    Мы обновляем информацию об акциях ежедневно в автоматическом режиме.
+                </div>
+            </details>
+            <details class="bg-[#151515] border border-[#2a2a2a] rounded-lg open:ring-1 open:ring-orange-500">
+                <summary class="px-5 py-4 font-medium text-white cursor-pointer list-none flex justify-between items-center">
+                    <span>Как добавить своё заведение?</span>
+                    <span class="text-orange-500 text-xl transition-transform duration-200">▼</span>
+                </summary>
+                <div class="px-5 pb-5 text-gray-400">
+                    Если вы представляете ресторан или сеть фастфуда, напишите нам на <a href="mailto:support@findis.ru" class="text-orange-500 hover:underline">support@findis.ru</a>. Мы обсудим условия сотрудничества и добавим ваши акции на карту.
+                </div>
+            </details>
+            <details class="bg-[#151515] border border-[#2a2a2a] rounded-lg open:ring-1 open:ring-orange-500">
+                <summary class="px-5 py-4 font-medium text-white cursor-pointer list-none flex justify-between items-center">
+                    <span>Почему я не вижу некоторые рестораны?</span>
+                    <span class="text-orange-500 text-xl transition-transform duration-200">▼</span>
+                </summary>
+                <div class="px-5 pb-5 text-gray-400">
+                    На карте отображаются только те заведения, которые в данный момент имеют активные акции. Если ресторан не показывается, возможно, у него нет действующих предложений, или он ещё не добавлен в нашу базу.
+                </div>
+            </details>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-[#0a0a0a] border-t border-[#2a2a2a] py-8">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+            <h3 class="font-bold text-lg mb-2 text-white">Findis</h3>
+            <p class="text-gray-400 text-sm">Быстрый поиск акций фастфуда рядом с вами</p>
+        </div>
+        <div>
+            <h4 class="font-semibold mb-2 text-white">Контакты</h4>
+            <ul class="text-sm text-gray-400 space-y-1">
+                <li>Email: <a href="mailto:support@findis.ru" class="text-orange-500 hover:underline">support@findis.ru</a></li>
+                <li>Соцсети:
+                    <a href="https://vk.com/kechpek" class="text-orange-500 hover:underline">VK</a>,
+                    <a href="https://t.me/katerinka_228" class="text-orange-500 hover:underline">Telegram</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-semibold mb-2 text-white">Информация</h4>
+            <ul class="text-sm text-gray-400 space-y-1">
+                <li><a href="about-faq.html#about" class="hover:text-orange-500">О проекте</a></li>
+                <li><a href="about-faq.html#faq" class="hover:text-orange-500">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 mt-8 pt-4 border-t border-[#2a2a2a] text-center text-sm text-gray-500">
+        © 2026 Findis.
+    </div>
+</footer>
+
+</body>
+</html>

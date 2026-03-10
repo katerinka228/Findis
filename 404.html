@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница не найдена — Findis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="bg-[#1a1a1a] text-gray-200 font-sans flex items-center justify-center min-h-screen">
+
+<div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center gap-8 py-12">
+    <!-- Левая часть: текст 404 -->
+    <div class="text-center lg:text-left max-w-lg">
+        <h1 class="text-9xl font-bold text-orange-500">404</h1>
+        <h2 class="text-3xl font-semibold text-white mt-4">Ой! Страница не найдена</h2>
+        <p class="text-gray-400 mt-2 max-w-md mx-auto lg:mx-0">
+            Возможно, эта страница была удалена или перемещена. Попробуйте вернуться на главную.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="index.html"
+               class="bg-orange-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-orange-400 transition text-center">
+                На главную
+            </a>
+            <a href="index.html#contacts-block" class="bg-[#2a2a2a] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#3a3a3a] transition text-center">
+                Связаться с нами
+            </a>
+        </div>
+
+        <div class="mt-12">
+            <p class="text-gray-500">Или воспользуйтесь навигацией:</p>
+            <nav class="mt-4 space-x-4">
+                <a href="index.html" class="text-orange-500 hover:underline">Главная</a>
+                <a href="about-faq.html#faq" class="text-orange-500 hover:underline">FAQ</a>
+                <a href="index.html#contacts-block" class="text-orange-500 hover:underline">Контакты</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="w-64 lg:w-96">
+        <img src="assets/img/котик.png" alt="Котик" class="w-full h-auto object-contain drop-shadow-2xl">
+    </div>
+</div>
+
+</body>
+</html>

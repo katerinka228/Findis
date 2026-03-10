@@ -47,3 +47,13 @@
     font-size: 0.7rem;
     font-weight: bold;
 }
+
+#contacts-block:target {
+    animation: highlight 2s ease;
+}
+
+@keyframes highlight {
+    0% { background-color: transparent; }
+    30% { background-color: rgba(255, 140, 0, 0.2); }
+    100% { background-color: transparent; }
+}
